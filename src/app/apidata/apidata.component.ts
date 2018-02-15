@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpapiService} from '../httpapi.service';
+import { HttpapiService } from '../httpapi.service';
 
 @Component({
   selector: 'app-apidata',
@@ -13,7 +13,6 @@ export class ApidataComponent implements OnInit {
 
   ngOnInit() {
     this.httpas.getData().subscribe((data) => {
-      // console.log(data);
       this.siteData = data;
     });
   }
